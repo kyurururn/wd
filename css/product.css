@@ -1,0 +1,170 @@
+
+
+/*商品詳細ページの設定*/
+.product-detail {
+    margin: 0 auto;
+    padding: 50px 30px;
+    padding-top: 100px;
+    padding-bottom: 75px;
+    background-color:#f1ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-section {
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    margin-bottom: 25px;
+    padding: 30px;
+}
+
+.product-main {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-info {
+    width: 50%;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #303030;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #303030;
+}
+
+.product-describe {
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+}
+
+.product-button {
+    background-color: #303030;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.product-button:hover {
+    background-color: #505050;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #303030;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #303030;
+}
+
+/*スペック表の設定*/
+.spec-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.spec-table th, .spec-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.spec-table th {
+    background-color: #303030;
+    color: white;
+    font-weight: 600;
+    width: 30%;
+    border-right: 1px solid #404040;
+}
+
+.spec-table tr:last-child th,
+.spec-table tr:last-child td {
+    border-bottom: none;
+}
+
+.spec-table tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+/*特徴リストの設定*/
+.features-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.features-list li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.features-list li:before {
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #4CAF50;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*レスポンシブ設定*/
+@media (max-width: 750px) {
+    .product-main {
+        flex-direction: column;
+    }
+
+    .product-image, .product-info {
+        width: 100%;
+    }
+
+    .product-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
